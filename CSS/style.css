@@ -1,0 +1,30 @@
+body{
+    background-color: rgb(240, 126, 198);
+    color: white;
+}
+body{
+    background-image: url(spider.jpg);
+}
+body{
+    h1{
+        color: rgb(171, 245, 61);
+    }
+}
+body{
+    background-repeat: no-repeat;
+}
+body{ background: url(spider.jpg)#FFF top right no repeat;}
+body{
+    h4{
+        font-family: Arial, Helvetica, sans-serif;
+        font-style: italic;
+    }
+}
+div{
+    width: 990px;
+    height: 500px;
+    margin: 0auto;
+    padding: 0px;
+    background-image: linear-gradient(60deg,red,yellow);
+    background-image: radial-gradient(purple,pink);
+}

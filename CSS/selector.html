@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector|CSS</title>
+    <style>
+        *{
+            color:#7940da;margin: 0;padding: 0;box-sizing: border-box;
+        }
+        div{background-color: rgb(232, 215, 248);}
+        p{color: rgb(240, 96, 182);}
+        .para {color: rgb(117, 117, 227);}
+        #text{color:rgb(41, 165, 68)}
+        /* combinational selector*/
+        div p{ color:black}
+        div+p{color: bisque;}
+        div~p{color: hotpink;}
+
+    </style>
+</head>
+<body>
+    <!--TYPES OF SELECTORS
+    universal - *
+    simple - element,attribute,class and id
+    combinatonal - spacechild,general,siblings and adjust
+    pseudo class - change state of the elements
+    pseudo elements - modify the styleof the element -->
+    <H1>SELECTOR</H1>
+    <div>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam dolor totam consectetur dolorem, accusamus dolores modi ex eum accusantium deleniti deserunt inventore quos, quod harum non, omnis ipsa exceptur.
+        </p>
+        <main>
+        <p class="para">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi ipsa, laudantium, commodi porro placeat temporibus et vero fugit aliquid, sit qui tempore repellat ullam? Deleniti aliquam assumenda, pariatur adipisci corrupti a totam sapiente ea quis! Voluptas quaerat labore, laboriosam architecto eligendi veritatis modi necessitatibus illo!</p>
+        <main>
+        <main>
+        <p id="text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repellat recusandae temporibus similique quidem numquam ipsam quaerat voluptatem natus odio, quos fugiat debitis asperiores necessitatibus ea minima blanditiis neque aliquam quas officia doloremque dolorum aut sed sequi?</p>
+        <main>
+    </div>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Excepturi assumenda aperiam perspiciatis fugiat quo ea debitis, aut dolor voluptas ipsum sit, numquam fugit cumque, nihil architecto unde recusandae nobis animi.</p>
+</body>
+</html>
