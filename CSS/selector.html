@@ -8,14 +8,21 @@
         *{
             color:#7940da;margin: 0;padding: 0;box-sizing: border-box;
         }
-        div{background-color: rgb(232, 215, 248);}
+        /*div{background-color: rgb(232, 215, 248);}
         p{color: rgb(240, 96, 182);}
         .para {color: rgb(117, 117, 227);}
         #text{color:rgb(41, 165, 68)}
         /* combinational selector*/
-        div p{ color:black}
+        /*div p{ color:black}
         div+p{color: bisque;}
         div~p{color: hotpink;}
+        a:hover{color: aquamarine;}
+        a:visited{color: blue;}
+        a:active{color: bisque;}*/
+        div:nth-child(3){background-color: blueviolet;}
+        p::first-letter{font-size: larger;color: chartreuse;}
+        p::after{content:'read more!';color;}
+        p::first-line{text-decoration: underline;text-transform: uppercase;}
 
     </style>
 </head>
