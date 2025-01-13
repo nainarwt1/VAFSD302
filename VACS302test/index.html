@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <img src="https://i.pinimg.com/736x/29/92/72/299272600f6458cf34a1331199675f16.jpg" height="450" alt="">
+      
+      <div class="login-container">
+          <h1>MASTERY HUB</h1>
+            <form action="/login" method="POST">
+                <div class="form-group">
+                  <label for="username">Username or Email</label>
+                  <input type="text" id="username" name="username" placeholder="Enter username or email">
+                </div>
+                <div class="form-group">
+                  <label for="password">Password</label>
+                  <input type="password" id="password" name="password" placeholder="Enter the password">
+                </div>
+                <div class="form-options">
+                    <a href="/forgot-password">Forgot Password?</a>
+                </div>
+                <button type="submit" class="login-button">Sign in</button>
+            </form>
+            <p>Are you new? <a href="">Create an account</a></p>
+         </div>
+     </div>
+         <script>
+          // Select form and input elements
+   const loginForm = document.querySelector("form");
+   const usernameInput = document.getElementById("username");
+   const passwordInput = document.getElementById("password");
+   const errorMessage = document.createElement("div");
+errorMessage.style.color = "red";
+errorMessage.style.marginBottom = "10px";
+loginForm.insertBefore(errorMessage, loginForm.firstChild);
+
+// Add event listener to the form
+loginForm.addEventListener("submit", function (event) {
+    event.preventDefault(); // Prevent default form submission
+
+    const username = usernameInput.value.trim();
+    const password = passwordInput.value.trim();
+
+    // Basic validation
+    if (!username) {
+        errorMessage.textContent = "Please enter your username or email.";
+        return;
+    }
+    if (!password) {
+        errorMessage.textContent = "Please enter your password.";
+        return;
+    }
+
+    // Simulate login validation (replace with real backend authentication)
+    if (username === "admin" && password === "password123") {
+        errorMessage.textContent = ""; // Clear error message
+        alert("Login successful!");
+        window.location.href = "index.html"; // Redirect to homepage
+    } else {
+        errorMessage.textContent = "Invalid username or password. Please try again.";
+    }
+});
+
+         </script>
+</body>
+</html>
