@@ -1,0 +1,47 @@
+/* General Body Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e4d0d0;
+  }
+  
+ /* Header Title Styles */
+ header {
+    text-align: center;
+    padding: 10px;
+    background-color:#E4D0D0;
+    color: #867070;
+  }
+
+  header h1 {
+    margin: 0;
+    color:#523e3e;
+    font-size: 2.5em;
+  }
+  /* Main Heading */
+  h1 {
+    text-align: center;
+    margin-top: 20px;
+    color: #5f5454;
+  }
+  /* Card Container Styles */
+  .card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px; /* Increased for better spacing */
+    margin: 20px auto;
+    padding: 10px;
+  }
+  /* Text Styles in Cards */
+ .card p {
+    color: #555;
+    font-size: 0.9em;
+    margin: 5px 0;
+  }
+  
+  
+
+  

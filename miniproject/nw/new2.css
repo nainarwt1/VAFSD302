@@ -1,0 +1,25 @@
+.card img {
+    width: 100%; /* Ensures the image doesn't exceed the card's width */
+    height: 110px; /* Sets a fixed height for the image */
+    object-fit: cover; /* Crops the image to fill the set dimensions */
+    border-top-left-radius: 8px; /* Rounds the corners to match the card */
+    border-top-right-radius: 8px; /* Rounds the corners to match the card */
+  }
+  /* Navigation Bar Styles */
+nav {
+  background-color: #333;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+nav a:hover {
+  background-color: #575757;
+}

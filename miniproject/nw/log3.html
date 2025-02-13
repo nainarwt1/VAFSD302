@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Log - BookLore</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d4a7a7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #E4D0D0;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #4a3535;
+    }
+
+    .category {
+      margin-top: 30px;
+    }
+
+    .category h2 {
+      background-color: #5ea9ac;
+      padding: 10px;
+      color: white;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .book-entry {
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .book-entry input,
+    .book-entry textarea {
+      width: 97%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .book-entry textarea {
+      height: 150px;
+    }
+
+    .book-entry button {
+      padding: 10px 20px;
+      background-color: #5ea9ac;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .book-entry button:hover {
+      background-color: #65c0bb;
+    }
+
+    .book-log-display .entry {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .book-log-display .entry h3 {
+      margin: 0;
+      font-size: 1.3em;
+    }
+
+    .book-log-display .entry p {
+      color: #555;
+    }
+
+    .book-log-display .entry .review {
+      font-size: 1em;
+      color: #333;
+    }
+
+    .book-entry label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Book Log</h1>
+
+    <!-- Book Entry Form -->
+    <div class="book-entry">
+      <h2 style="color: #544949;">Log a New Book</h2>
+      <form action="#" method="post">
+        <label for="category">Select Category:</label>
+        <select id="category" name="category">
+          <option value="read">Currently Reading</option>
+          <option value="reading">Want to Read</option>
+          <option value="to-read">Read</option>
+        </select>
+
+        <label for="title">Book Title:</label>
+        <input type="text" id="title" name="title" placeholder="Enter book title" required>
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" placeholder="Enter book author" required>
+
+        <label for="review">Your Review:</label>
+        <textarea id="review" name="review" placeholder="Write your review here" required></textarea>
+
+        <button type="submit">Add Book</button>
+      </form>
+    </div>
+
+    <!-- Book Log Display -->
+    <div class="book-log-display">
+      <!-- Currently reading -->
+      <div class="category">
+        <h2>Currently Reading</h2>
+        <div class="entry" style="background-color: #F1E5D1;">
+          <h3>"The Silent Patient" by Alex Michaelides</h3>
+          <p class="review">A psychological thriller that keeps you on the edge of your seat. The twists and turns are mind-blowing, making it an addictive read.</p>
+        </div>
+        <div class="entry" style="background-color: #F1E5D1;">
+          <h3>"Where the Crawdads Sing" by Delia Owens</h3>
+          <p class="review">A beautiful story of isolation and survival in the wild. The author’s writing is poetic, and the plot has emotional depth that resonates long after reading.</p>
+        </div>
+      </div>
+
+      <!-- Want to Read -->
+      <div class="category">
+        <h2>Want to Read</h2>
+        <div class="entry" style="background-color: #F1E5D1;">
+          <h3>"The Night Circus" by Erin Morgenstern</h3>
+          <p class="review">A fantasy novel that promises magic, mystery, and romance. I'm excited to see how the magical circus evolves in this unique tale.</p>
+        </div>
+      </div>
+
+      <!-- Read -->
+      <div class="category">
+        <h2>Read</h2>
+        <div class="entry"style="background-color: #F1E5D1;">
+          <h3>"The Alchemist" by Paulo Coelho</h3>
+          <p class="review">An inspiring and motivational tale about following one’s dreams and finding the meaning of life. It’s a life-changing read.</p>
+        </div>
+        <div class="entry"style="background-color: #F1E5D1;">
+          <h3>"The Four Agreements" by Don Miguel Ruiz</h3>
+          <p class="review">A simple yet profound guide to achieving personal freedom and happiness. The teachings are timeless and highly relevant to everyday life.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

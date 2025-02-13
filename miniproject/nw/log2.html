@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Book Log - BookLore</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 800px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .category {
+      margin-top: 30px;
+    }
+
+    .category h2 {
+      background-color: #6aba6d;
+      padding: 10px;
+      color: white;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .book-entry {
+      background-color: #fafafa;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .book-entry input,
+    .book-entry textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .book-entry textarea {
+      height: 150px;
+    }
+
+    .book-entry button {
+      padding: 10px 20px;
+      background-color: #6aba6d;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .book-entry button:hover {
+      background-color: #45a049;
+    }
+
+    .book-log-display .entry {
+      background-color: #f9f9f9;
+      padding: 15px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+    }
+
+    .book-log-display .entry h3 {
+      margin: 0;
+      font-size: 1.3em;
+    }
+
+    .book-log-display .entry p {
+      color: #555;
+    }
+
+    .book-log-display .entry .review {
+      font-size: 1em;
+      color: #333;
+    }
+
+    .book-entry label {
+      display: block;
+      margin-bottom: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Book Log</h1>
+
+    <!-- Book Entry Form -->
+    <div class="book-entry">
+      <h2>Log a New Book</h2>
+      <form action="#" method="post">
+        <label for="category">Select Category:</label>
+        <select id="category" name="category">
+          <option value="read">Currently Reading</option>
+          <option value="reading">Want to Read</option>
+          <option value="to-read">Read</option>
+        </select>
+
+        <label for="title">Book Title:</label>
+        <input type="text" id="title" name="title" placeholder="Enter book title" required>
+
+        <label for="author">Author:</label>
+        <input type="text" id="author" name="author" placeholder="Enter book author" required>
+
+        <label for="review">Your Review:</label>
+        <textarea id="review" name="review" placeholder="Write your review here" required></textarea>
+
+        <button type="submit">Add Book</button>
+      </form>
+    </div>
+
+    <!-- Book Log Display -->
+    <div class="book-log-display">
+      <!-- Currently reading -->
+      <div class="category">
+        <h2>Currently Reading</h2>
+        <div class="entry">
+          <h3>"The Great Gatsby" by F. Scott Fitzgerald</h3>
+          <p class="review">A great classic, capturing the essence of the American Dream. The characters are very well developed, and the writing style is poetic.</p>
+        </div>
+        <div class="entry">
+          <h3>"1984" by George Orwell</h3>
+          <p class="review">A powerful and chilling portrayal of a totalitarian regime. The themes of surveillance and freedom are still very relevant today.</p>
+        </div>
+      </div>
+
+      <!-- Want to Read -->
+      <div class="category">
+        <h2>Want to Read</h2>
+        <div class="entry">
+          <h3>"The Catcher in the Rye" by J.D. Salinger</h3>
+          <p class="review">A story about adolescence, alienation, and the struggles of growing up. I’m really enjoying the character development.</p>
+        </div>
+      </div>
+
+      <!--Read -->
+      <div class="category">
+        <h2>Read</h2>
+        <div class="entry">
+          <h3>"Moby-Dick" by Herman Melville</h3>
+          <p class="review">I’ve heard a lot about this book, and I’d like to dive into it soon. It seems like a deep and philosophical read.</p>
+        </div>
+        <div class="entry">
+          <h3>"War and Peace" by Leo Tolstoy</h3>
+          <p class="review">This epic historical novel is on my list. I’m excited to explore Russian history through this narrative.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

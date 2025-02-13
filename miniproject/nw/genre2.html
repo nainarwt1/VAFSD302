@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genre Exploration - BookLore</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #d4a7a7;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: #E4D0D0;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .genre-category {
+      margin-top: 30px;
+    }
+
+    .genre-category h2 {
+      background-color: #5ea9ac;
+      padding: 10px;
+      color: white;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .books-container {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      margin-top: 10px;
+    }
+
+    .book-card {
+      background-color: #F1E5D1;
+      width: 150px;
+      padding: 10px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      flex-shrink: 0;
+    }
+
+    .book-card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 4px;
+    }
+
+    .book-card h4 {
+      margin-top: 10px;
+      color: #333;
+      font-size: 1.1em;
+    }
+
+    .book-card p {
+      color: #555;
+      font-size: 0.9em;
+    }
+
+    .book-card span {
+      font-size: 0.8em;
+      color: #777;
+      margin-top: 5px;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1 style="color: #4a3535;">Explore Book Genres</h1>
+   
+
+    <!-- Young Adult Genre -->
+    <div class="genre-category">
+      <h2>Young Adult</h2>
+      <div class="books-container">
+        <div class="book-card">
+          <img src=" https://m.media-amazon.com/images/I/817tHNcyAgL._SL1500_.jpg"alt="Book 1">
+          <h4>The Fault in Our Stars</h4>
+          <p>by John Green</p>
+          <span>A heartfelt story of love and loss, following two teenagers who bond over their shared experiences with cancer.</span>
+        </div>
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/61I24wOsn8L._AC_UF1000,1000_QL80_.jpg" alt="Book 2">
+          <h4>The Hunger Games</h4>
+          <p>by Suzanne Collins</p>
+          <span>A dystopian thriller where teenagers must compete in a deadly televised survival game.</span>
+        </div>
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/91nTClkODkL.jpg" alt="Book 3">
+          <h4>Looking for Alaska</h4>
+          <p>by John Green</p>
+          <span>A coming-of-age novel about friendship, love, and loss set in a boarding school.</span>
+        </div>
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/61lqrT3zHnL._AC_UF350,350_QL50_.jpg" alt="Book 4">
+          <h4>Wonder</h4>
+          <p>by R.J. Palacio</p>
+          <span>A story of a boy with a facial deformity who faces the challenges of attending school for the first time.</span>
+        </div>
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/91XzMtjuH5L._UF1000,1000_QL80_.jpg" alt="Book 5">
+          <h4>Delirium</h4>
+          <p>by Lauren Oliver</p>
+          <span>A dystopian novel where love is considered a disease and a girl struggles to escape its grip.</span>
+        </div>
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/91-DipaBR2L.jpg" alt="Book 6">
+          <h4>Six of Crows</h4>
+          <p>by Leigh Bardugo</p>
+          <span>A fantasy novel filled with heists and twists, focusing on six criminals with a shared mission.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Feminist Classics Genre -->
+    <div class="genre-category">
+      <h2>Feminist Classics</h2>
+      <div class="books-container">
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/71t0P8IUWrL._AC_UF1000,1000_QL80_.jpg" alt="Book 1">
+          <h4>The Second Sex</h4>
+          <p>by Simone de Beauvoir</p>
+          <span>Explores the history of women’s oppression and the idea of woman as the "Other".</span>
+        </div>
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/71bGTLvoYTL._UF1000,1000_QL80_.jpg" alt="Book 2">
+          <h4>The Feminine Mystique</h4>
+          <p>by Betty Friedan</p>
+          <span>Revolutionized the feminist movement by revealing the dissatisfaction of suburban housewives in post-war America.</span>
+        </div>
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/81nYAOd3IXL._AC_UF1000,1000_QL80_.jpg" alt="Book 3">
+          <h4>A Room of One's Own</h4>
+          <p>by Virginia Woolf</p>
+          <span>An essay exploring women’s literary tradition and the challenges faced by female writers.</span>
+        </div>
+        <div class="book-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmNC3j-VC9ilX_OW8ihBJ-0PkvHpFvW-0fqg&s" alt="Book 4">
+          <h4>Women, Race, & Class</h4>
+          <p>by Angela Y. Davis</p>
+          <span>A powerful examination of the intersection between race and gender in the feminist movement.</span>
+        </div>
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/91onBEiNeYL._AC_UF1000,1000_QL80_.jpg" alt="Book 5">
+          <h4>Bad Feminist</h4>
+          <p>by Roxane Gay</p>
+          <span>Essays on feminism, culture, and the complexities of being a feminist in modern society.</span>
+        </div>
+        <div class="book-card">
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9ge3IoFmeK7O5Zn-uI9sCc_iJieXosYaycw&s" alt="Book 6">
+          <h4>We Should All Be Feminists</h4>
+          <p>by Chimamanda Ngozi Adichie</p>
+          <span>An essay that addresses the importance of feminism in today’s world and redefines it for the modern age.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Psychological Thrillers Genre -->
+    <div class="genre-category">
+      <h2>Psychological Thrillers</h2>
+      <div class="books-container">
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/71+khXHbe5L._AC_UF1000,1000_QL80_.jpg" alt="Book 1">
+          <h4>Gone Girl</h4>
+          <p>by Gillian Flynn</p>
+          <span>A gripping tale of a missing wife and a complex web of deceit and deception.</span>
+        </div>
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/71vWnStCnEL.jpg" alt="Book 2">
+          <h4>The Girl on the Train</h4>
+          <p>by Paula Hawkins</p>
+          <span>A psychological thriller that explores the line between truth and lies through the eyes of a troubled woman.</span>
+        </div>
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/8163wfxPmlL.jpg" alt="Book 3">
+          <h4>Shutter Island</h4>
+          <p>by Dennis Lehane</p>
+          <span>A chilling story of a U.S. Marshal investigating the disappearance of a patient from a mental asylum.</span>
+        </div>
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/81SFYne3dWL._AC_UF1000,1000_QL80_.jpg" alt="Book 4">
+          <h4>Before I Go to Sleep</h4>
+          <p>by S.J. Watson</p>
+          <span>A woman wakes up every day with no memory of the day before, and begins uncovering dark secrets.</span>
+        </div>
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/81JJPDNlxSL.jpg" alt="Book 5">
+          <h4>The Silent Patient</h4>
+          <p>by Alex Michaelides</p>
+          <span>A psychological thriller about a woman who shoots her husband and then goes silent.</span>
+        </div>
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/71l2dN4K4vL._AC_UF350,350_QL50_.jpg" alt="Book 6">
+          <h4>Big Little Lies</h4>
+          <p>by Liane Moriarty</p>
+          <span>A story of domestic secrets, lies, and the events that lead to a tragic incident at a school event.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Murder Mystery Genre -->
+    <div class="genre-category">
+      <h2>Murder Mystery</h2>
+      <div class="books-container">
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/81YW99XIpJL._UF1000,1000_QL80_.jpg" alt="Book 1">
+          <h4>The Girl with the Dragon Tattoo</h4>
+          <p>by Stieg Larsson</p>
+          <span>A gripping mystery centered on a missing woman and dark family secrets.</span>
+        </div>
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/71ihbKf67RL.jpg" alt="Book 2">
+          <h4>Murder on the Orient Express</h4>
+          <p>by Agatha Christie</p>
+          <span>A classic whodunit mystery involving a murder aboard the famous train.</span>
+        </div>
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/81E3hDPr3eL.jpg" alt="Book 3">
+          <h4>A Good Girl's Guide To Murder</h4>
+          <p>by Holly Jackson</p>
+          <span>A thrilling mystery where a high schooler reopens a closed murder case, uncovering dark secrets .</span>
+        </div>
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/71n46r22i7L._UF1000,1000_QL80_.jpg" alt="Book 4">
+          <h4>The Secret History</h4>
+          <p>by Donna Tartt</p>
+          <span>A novel that explores a group of college students who commit a murder and the aftermath of their crime.</span>
+        </div>
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/81tV-GcYJEL._UF1000,1000_QL80_.jpg" alt="Book 5">
+          <h4>The Woman in White</h4>
+          <p>by Wilkie Collins</p>
+          <span>A classic Victorian gothic novel with a mysterious woman and a chilling murder plot.</span>
+        </div>
+        <div class="book-card">
+          <img src="https://m.media-amazon.com/images/I/71pOMFWk7sL._AC_UF1000,1000_QL80_.jpg" alt="Book 6">
+          <h4>And Then There Were None</h4>
+          <p>by Agatha Christie</p>
+          <span>A suspenseful mystery where ten strangers are invited to an island and slowly begin to die one by one.</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>

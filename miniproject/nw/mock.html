@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookLore - Community</title>
+  <style>
+ nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #575757;
+    }
+
+    .community-section {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .post {
+      background-color: #f9f9f9;
+      border: 1px solid #ddd;
+      margin-bottom: 20px;
+      padding: 20px;
+      border-radius: 8px;
+    }
+
+    .post img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .post .title {
+      font-size: 1.5em;
+      font-weight: bold;
+      color: #333;
+    }
+
+    .post .content {
+      color: #555;
+      font-size: 1em;
+    }
+
+    .post .likes {
+      color: #6aba6d;
+      cursor: pointer;
+    }
+
+    .comments-section {
+      margin-top: 20px;
+      display: none;
+    }
+
+    .comment {
+      padding: 10px;
+      background-color: #f4f4f4;
+      margin: 10px 0;
+      border-radius: 6px;
+    }
+
+    .comment input {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    .comment button {
+      padding: 10px 20px;
+      background-color: #6aba6d;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .comment button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>BookLore Community</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="mock2.html">Community</a>
+    <a href="log2.html">Reading Log</a>
+  </nav>
+
+  <!-- Community Section -->
+  <div class="community-section">
+    <div class="post">
+      <div class="title">"The Best Mystery Books of All Time"</div>
+      <div class="content">What are your favorite mystery books? Here are some of mine:</div>
+      <img src="mystery-books.jpg" alt="Mystery Books">
+      <div class="likes" onclick="likePost(this)">👍 Like</div>
+      <div class="comments-section">
+        <div class="comment">
+          <p>Great list! I would add 'The Girl with the Dragon Tattoo' to the list!</p>
+        </div>
+        <div class="comment">
+          <p>I love 'Gone Girl'! Can't stop thinking about that plot twist.</p>
+        </div>
+        <input type="text" placeholder="Add a comment...">
+        <button>Post Comment</button>
+      </div>
+      <div class="likes" onclick="toggleComments(this)">💬 Comments</div>
+    </div>
+
+    <div class="post">
+      <div class="title">"Book Meme: 'When you finish a series and don't know what to do with your life'"</div>
+      <img src="book-meme.jpg" alt="Book Meme">
+      <div class="likes" onclick="likePost(this)">👍 Like</div>
+      <div class="comments-section">
+        <div class="comment">
+          <p>Haha, this is so relatable!</p>
+        </div>
+        <div class="comment">
+          <p>I literally felt that after finishing 'Harry Potter'!</p>
+        </div>
+        <input type="text" placeholder="Add a comment...">
+        <button>Post Comment</button>
+      </div>
+      <div class="likes" onclick="toggleComments(this)">💬 Comments</div>
+    </div>
+  </div>
+
+  <script>
+    // Function to toggle comments visibility
+    function toggleComments(element) {
+      const commentsSection = element.closest('.post').querySelector('.comments-section');
+      commentsSection.style.display = commentsSection.style.display === 'block' ? 'none' : 'block';
+    }
+
+    // Function to simulate "liking" a post
+    function likePost(element) {
+      const likeText = element.innerHTML === "👍 Like" ? "❤️ Liked" : "👍 Like";
+      element.innerHTML = likeText;
+    }
+  </script>
+
+</body>
+</html>

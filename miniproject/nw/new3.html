@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>booklore</title>
+  <!-- Link to external CSS -->
+  <link rel="stylesheet" href="new4.css">
+  <style>
+ /* Navigation Styles */
+    nav {
+      background-color: #d4a7a7;
+      padding: 0;
+      text-align: center;
+    }
+
+    nav a {
+      color: rgb(97, 37, 37);
+      text-decoration: none;
+      padding: 14px 20px;
+      margin: 0 10px;
+      display: inline-block;
+    }
+
+    nav a:hover {
+      background-color: #ce9595;
+    }
+    /* Content Styles */
+    h1 {
+      text-align: center;
+      margin-top: 10px;
+      
+    }
+    /* Card Styles */
+    .card {
+      width: 220px; /* Consistent card width */
+      height: 270px; /* Consistent card height */
+      background-color: #F1E5D1;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      text-align: center;
+      padding: 10px; /* Add padding inside cards */
+      cursor: pointer;
+      transition: transform 0.3s ease-in-out;
+    }
+    .card:hover {
+      transform: scale(1.05); /* Zoom effect on hover */
+    }
+
+    /* Card Image Styling */
+    .card img {
+      width: 100%; /* Image spans the card's width */
+      height: 150px; /* Fixed height for all images */
+      object-fit: cover; /* Scales without distortion */
+      border-radius: 8px 8px 0 0; /* Matches card corners */
+    }
+
+    /* Text styles inside cards */
+    .card h3 {
+      color: #333;
+      margin: 0;
+      font-size: 1.2em;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 0.9em;
+    }
+
+    /* Button styling */
+    .card a {
+      text-decoration: none;
+      color: #fff;
+      background-color: #5ea9ac;
+      padding: 10px 20px;
+      border-radius: 4px;
+      font-weight: bold;
+    }
+
+    .card a:hover {
+      background-color: #65c0bb;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Title -->
+  <header>
+    <h1>booklore</h1>
+  </header>
+
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="login3.html">Login</a>
+    <a href="log3.html">Reading Log</a>
+    <a href="genre2.html">Genres</a>
+    <a href="mock2.html">Community</a>
+  </nav>
+
+  <!-- Heading -->
+  <h1>Unleash Your Inner Bibliophile</h1>
+
+  <div class="card-container">
+    <!-- Reading Log Card -->
+    <div class="card">
+      <img src="https://i.pinimg.com/474x/bd/92/bc/bd92bcad6fd5c849d27d3cf294bf718f.jpg" alt="Notebook with a pen for tracking books">
+      <h3>Reading Log</h3>
+      <p>Track your books and write reviews.</p>
+      <a href="log3.html">Go to Reading Log</a>
+    </div>
+
+    <!-- Genre Exploration Card -->
+    <div class="card">
+      <img src="https://i.pinimg.com/474x/5a/47/6a/5a476a4b76d4b68eb08d55ef5c0cac90.jpg" alt="Bookshelves filled with books for exploring genres">
+      <h3>Genre Exploration</h3>
+      <p>Discover books in different genres.</p>
+      <a href="genre2.html">Explore Genres</a>
+    </div>
+
+    <!-- Community Card -->
+    <div class="card">
+      <img src="https://i.pinimg.com/474x/03/d9/1b/03d91b9a0b57bb1087df6a59b006227d.jpg" alt="Community connection through memes and discussions">
+      <h3>Community</h3>
+      <p>Connect with readers through memes and recs.</p>
+      <a href="mock2.html">Join the Fun</a>
+    </div>
+  </div>
+</body>
+</html>

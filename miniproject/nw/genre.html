@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Genre Exploration - BookLore</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f9;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      width: 80%;
+      max-width: 1000px;
+      margin: 30px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    .genre-category {
+      margin-top: 30px;
+    }
+
+    .genre-category h2 {
+      background-color: #6aba6d;
+      padding: 10px;
+      color: white;
+      border-radius: 4px;
+      margin-bottom: 10px;
+    }
+
+    .genre-card {
+      background-color: #fafafa;
+      padding: 20px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .genre-card img {
+      width: 150px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-left: 20px;
+    }
+
+    .genre-card h3 {
+      margin: 0;
+      font-size: 1.5em;
+    }
+
+    .genre-card p {
+      color: #555;
+      flex-grow: 1;
+      margin-right: 20px;
+    }
+
+    .genre-card ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    .genre-card ul li {
+      margin: 5px 0;
+    }
+
+    .genre-card button {
+      padding: 10px 20px;
+      background-color: #6aba6d;
+      color: white;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+    }
+
+    .genre-card button:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>Explore Book Genres</h1>
+
+    <!-- Young Adult Genre -->
+    <div class="genre-category">
+      <h2>Young Adult</h2>
+      <div class="genre-card">
+        <div>
+          <h3>Young Adult</h3>
+          <p>Young Adult (YA) books are typically written for a teenage audience but have gained popularity among adults too. They often feature coming-of-age themes, relationships, and personal struggles.</p>
+          <ul>
+            <li>"The Fault in Our Stars" by John Green</li>
+            <li>"The Hunger Games" by Suzanne Collins</li>
+            <li>"Looking for Alaska" by John Green</li>
+          </ul>
+          <button>Explore More</button>
+        </div>
+        <img src="young-adult-image.jpg" alt="Young Adult Genre">
+      </div>
+    </div>
+
+    <!-- Feminist Classics Genre -->
+    <div class="genre-category">
+      <h2>Feminist Classics</h2>
+      <div class="genre-card">
+        <div>
+          <h3>Feminist Classics</h3>
+          <p>Feminist classics are books that have had a significant impact on feminist literature, addressing themes of women's rights, gender equality, and social justice.</p>
+          <ul>
+            <li>"The Second Sex" by Simone de Beauvoir</li>
+            <li>"The Feminine Mystique" by Betty Friedan</li>
+            <li>"A Room of One's Own" by Virginia Woolf</li>
+          </ul>
+          <button>Explore More</button>
+        </div>
+        <img src="feminist-classics-image.jpg" alt="Feminist Classics Genre">
+      </div>
+    </div>
+
+    <!-- Psychological Thrillers Genre -->
+    <div class="genre-category">
+      <h2>Psychological Thrillers</h2>
+      <div class="genre-card">
+        <div>
+          <h3>Psychological Thrillers</h3>
+          <p>Psychological thrillers focus on the unstable or delusional psychological states of characters. These books often involve intense suspense, mind games, and plot twists.</p>
+          <ul>
+            <li>"Gone Girl" by Gillian Flynn</li>
+            <li>"The Girl on the Train" by Paula Hawkins</li>
+            <li>"Shutter Island" by Dennis Lehane</li>
+          </ul>
+          <button>Explore More</button>
+        </div>
+        <img src="psychological-thriller-image.jpg" alt="Psychological Thrillers Genre">
+      </div>
+    </div>
+
+    <!-- Murder Mystery Genre -->
+    <div class="genre-category">
+      <h2>Murder Mystery</h2>
+      <div class="genre-card">
+        <div>
+          <h3>Murder Mystery</h3>
+          <p>Murder mystery books revolve around a crime, usually a murder, and the investigation to uncover the killer. These books often feature detectives or amateur sleuths solving the crime.</p>
+          <ul>
+            <li>"The Girl with the Dragon Tattoo" by Stieg Larsson</li>
+            <li>"Murder on the Orient Express" by Agatha Christie</li>
+            <li>"The Silent Patient" by Alex Michaelides</li>
+          </ul>
+          <button>Explore More</button>
+        </div>
+        <img src="murder-mystery-image.jpg" alt="Murder Mystery Genre">
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
