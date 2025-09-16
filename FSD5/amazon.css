@@ -1,0 +1,28 @@
+#containerbox{
+    display: flex;
+    flex-direction: row;
+    height: 220px;
+    width: 480px;
+    border: 2px gainsboro;
+    gap: 4px;
+
+}
+.box{
+    width: 160px;
+    border: 2px solid gray;
+}/
+
+.box:nth-child(1){
+    display: grid;
+
+}
+#head{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+#footer{
+    background-color: black;
+    color: white;
+    font-size: small;
+}
