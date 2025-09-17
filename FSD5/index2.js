@@ -1,5 +1,8 @@
-let isON= true;
-function colorHandler(color){
+function colorHandler(){
+            console.log(color);
 
-}
-if(isON)
+            console.log(document.getElementById("bulb"));
+            const bulb=document.getElementbyId("bulb");
+            bulb.style.backgroundcolor= color;
+
+        }
