@@ -38,7 +38,7 @@ console.log(x+y);
 addTwoNumbers(5,3); */
 /* let sayHi = ()=>
 console.log("hi"); */
-/* let spread = ["so","much","fun"];
+/* let \pread = ["so","much","fun"];
 let message=["js","is",...spread,"and","very","powerful"]; */
 function addTwoNumbers(x,y) {
     console.log(x+y);
