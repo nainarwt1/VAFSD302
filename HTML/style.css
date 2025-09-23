@@ -2,8 +2,11 @@ body{
     background-color: burlywood;
 }
 body{
-    background-image: url();
+    background-image: url(todolist.png);
 }
-body{
-    
+.prev{
+    background-position: 0px 0px;
+}
+.next{
+background-position: -32px 0px;
 }
