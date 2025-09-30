@@ -40,9 +40,10 @@ addTwoNumbers(5,3); */
 console.log("hi"); */
 /* let spread = ["so","much","fun"];
 let message=["js","is",...spread,"and","very","powerful"]; */
-function addTwoNumbers(x,y) {
-    console.log(x+y);
-}
-let arr= [5,9];
-addTwoNumbers(...arr);
+/* function addTwoNumbers(x,y) {
+     console.log(x+y);
+ }
+ let arr= [5,9];
+ addTwoNumbers(...arr);
+ */
 
